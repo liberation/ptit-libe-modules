@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@import "reset.less";
+@import "utils.less";
+
+@module: "carte";
+
+@mainColor: #3c3c3b;
+@sideColor: #7c7c7b;
+@ligthColor: #ffffff;
+
+.mainColor {background-color: @mainColor;}
+.sideColor {background-color: @sideColor;}
+.ligthColor {background-color: @ligthColor;}
+
+/*! App */
+#app {position: relative; width: 100%; padding: 2em 30px; background: @ligthColor;}
+
+@import "@{module}.less";

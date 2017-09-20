@@ -1,0 +1,31 @@
+{
+  "name": "ptit-libe-modules",
+  "version": "0.0.1",
+  "description": "Generateur de modules Ptit Libé",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/libe-sixplus/ptit-libe-modules"
+  },
+  "main": "build.js",
+  "scripts": {
+    "build": "node build/build.js"
+  },
+  "author": "TomCourant",
+  "devDependencies": {
+    "async": "^2.5.0",
+    "browser-sync": "^2.18.13",
+    "copy": "^0.3.1",
+    "del": "^3.0.0",
+    "google-spreadsheet-to-json": "^1.0.0",
+    "handlebars": "^4.0.10",
+    "inquirer": "^3.3.0",
+    "less": "^2.7.2",
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1"
+  },
+  "engines": {
+    "node": ">= 8.5.0",
+    "npm": ">= 5.3.0"
+  },
+  "license": "MIT"
+}

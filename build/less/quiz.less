@@ -1,0 +1,52 @@
+/*! Quiz */
+.quiz {max-width: 600px; margin: 0 auto 20px;}
+.slider-wrap {position: relative; height: 10px; background-color: @ligthColor;}
+.slider {position: absolute; top: 0; left: 0; width: 50%; height: 10px; background-color: @sideColor;}
+.quiz-header {padding: 1em; color: #fff; background-color: @mainColor;}
+.quiz-header div:nth-child(1) {font-size: 1.1em;}
+.quiz-header div:nth-child(2) {font-size: 2em;}
+.quiz-main {border: 10px solid @ligthColor;}
+.current-reponses {overflow: hidden; background-color: @ligthColor;}
+.isImage .image {position: relative; float: left; width: 19%; height: 230px; margin-right: 1%; overflow: hidden; background-repeat: no-repeat; background-position: center; background-size: contain;}
+.isImage .reponse {float: left; width: 80%;}
+.reponse {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; margin-bottom: 10px; padding: 15px 5px; font-size: 1.3em; line-height: 40px; color: @mainColor; text-align: left; background-color: #fff;}
+.reponse:hover {background-color: @sideColor; color: #fff;}
+.reponse:last-child {margin-bottom: 0;}
+.text {display: inline-block; vertical-align: middle; line-height: normal; -ms-flex-item-align: center; align-self: center;}
+.arrow {height:40px; min-width:40px; margin-right: 10px; display:block; position:relative; overflow:hidden; background-color: @sideColor; border-radius: 50%; -ms-flex-item-align: center; align-self: center;}
+.arrow:before{content:''; height:11px; width:11px; display:block; border:3px solid #000; border-left-width:0; border-top-width:0; transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg); position:absolute; top:15px; right:12px;}
+.arrow:after{content:''; height:3px; width:18px; display:block; background:#000; position:absolute; top:19px; left:10px;}
+.reponse:hover .arrow {background-color: #fff;}
+.current-answere {overflow: hidden; padding: 1em; min-height: 230px; background-color: #fff;}
+.current-answere div:nth-child(1) {margin-bottom: .8em; font-size: 1.8em; color: @sideColor;}
+.prev {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+.next {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -ms-flex-direction: row-reverse; flex-direction: row-reverse; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+.next {overflow: hidden; float: right; margin-top: 1em; line-height: 40px; color: @sideColor; text-align: right;}
+.next .arrow {margin-left: 10px; margin-right: 0;}
+.prev {overflow: hidden; float: left; margin-top: 1em; line-height: 40px; color: @sideColor; text-align: left;}
+.prev .arrow { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg);}
+.quiz-end {padding: 1em; border: 10px solid @ligthColor; background-color: #fff; overflow: hidden;}
+.score {width: 200px; height: 200px; margin: 0 auto; text-align: center; color: #fff; font-size: 3em; line-height: 200px; border-radius: 50%; background-color: @sideColor;}
+.quiz-end p {max-width: 600px; margin: 10px auto; font-size: 1.4em;}
+.quiz-end p span {display: block;}
+.quiz-end .prev,
+.quiz-end .next {width: 50%;}
+.more {margin-top: 2em;}
+.more p {font-size: 1em; text-transform: uppercase;}
+.more-wrap {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: distribute; justify-content: space-around; padding: .5em; background-color: #f4f4f4;}
+.more-box {margin: 1em;}
+.more-box a img {margin-bottom: .5em;}
+.more-box a span {display: block;}
+.more-box a span:first-child {font-size: 1.2em;}
+
+@media (max-width: 768px) {
+.quiz-header {font-size: .75em;}
+.isImage .image {float: none; width: 100%; height: 230px; margin-right: 0; margin-bottom: 10px;}
+.isImage .reponse {float: none; width: 100%;}
+.reponse {padding: 5px;}
+.current-answere div:nth-child(1) {font-size: 1.5em;}
+.more-wrap {display: block;}
+.more-box {-webkit-box-flex: 0;-ms-flex: none;flex: none; display: block; width: 100%; margin: 0; margin-bottom: 1em;}
+.more-box a {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: distribute; justify-content: space-around;}
+.more-box a img {width: 50%; margin-right: .5em;}
+}
