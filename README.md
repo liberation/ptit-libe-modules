@@ -26,7 +26,7 @@ $ npm install
 
 _Une fois le google sheet remplis, il faut le publié : **Fichier / Publié pour le Web**_
 
-**Et de copier son ID :**
+Et de copier son **ID** :
 
 docs.google.com/spreadsheets/d/**1VZitfD0IGveJvwQayfflLTMwm3uQKMeVw8oS90Sz-uk**/edit#gid=0
 
