@@ -11,6 +11,8 @@
 ## Installation
 Requière Node JS >= 8.5.0 : [télécharger et installer Node](https://nodejs.org/fr/)
 
+Installer browser-sync via : `npm install -g browser-sync`
+
 #### Install :
 
 ```bash
@@ -24,7 +26,9 @@ $ npm install
 
 _Une fois le google sheet remplis, il faut le publié : **Fichier / Publié pour le Web**_
 
-**Et de copier son ID**
+**Et de copier son ID :**
+
+https://docs.google.com/spreadsheets/d/**1VZitfD0IGveJvwQayfflLTMwm3uQKMeVw8oS90Sz-uk**/edit#gid=0
 
 #### Ansi que les 3 couleurs du numéro en cours :
 
@@ -35,7 +39,13 @@ _Une fois le google sheet remplis, il faut le publié : **Fichier / Publié pour
 
 ## Utilisation
 
-#### Build :
+Aller dans le repertoire ptit-libe-modules-master
+
+**Sur PC :** `[MAJ + Clique droit]` / Ouvrir une fenêtre de commandes ici
+
+**Sur Mac :** Ouvrire l'application terminal, taper : `cd [ESPACE]` et glisser le dossier dans la fenêtre du terminal, taper `[ENTRER]`
+
+#### Lancer la création d'un nouveaux module :
 
 ```bash
 $ npm run build
