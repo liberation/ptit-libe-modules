@@ -76,7 +76,11 @@ le `{numero}` et le `{dossier}` s'afficheron dans la console
 3. Placer le module sur le ftp dans : `ptit-libe/modules/{numero}/{dossier}/`
 4. Copier la balise iframe dans le corps de l'article : `<iframe src="http://www.liberation.fr/apps/ptit-libe/modules/{numero}/{dossier}" class="fit-content" width="100%"></iframe>`
 
-**Et voila !**
+## ToDo
+
+- Tester les ID avec accents dans AI
+- Upload des fichier via ssh
+
 
 
 ## License
