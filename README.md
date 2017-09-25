@@ -32,9 +32,9 @@ docs.google.com/spreadsheets/d/**1VZitfD0IGveJvwQayfflLTMwm3uQKMeVw8oS90Sz-uk**/
 
 #### Ansi que les 3 couleurs du numéro en cours :
 
-- Main : Color 1
-- Side : Color 2
-- Ligth : Color 4
+- Color 4
+- Color 1
+- Color 2
 
 
 ## Utilisation
@@ -60,9 +60,9 @@ $ npm run build
 ? Est ce qu\'il y a plusieur feuilles dans le sheet ? (Yes/No)
 ? Nom de la feuille à traiter
 ? Nom du fichier svg (pour les modules de type carte)
-? Couleur principale (1)
-? Couleur secondaire (2)
-? Couleur opacité resuite (4)
+? Couleur 4
+? Couleur 1
+? Couleur 2
 ```
 _Si tous se passe bien vous allez voir le logo Ptit Libé ainsi que les instruction pour la mise en ligne._
 
