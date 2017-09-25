@@ -84,19 +84,19 @@ module.exports = [
   {
     type: 'input',
     name: 'mainColor',
-    message: 'Couleur principale (1)',
+    message: 'Couleur 4',
     validate: (input) => required(input)
   },
   {
     type: 'input',
     name: 'sideColor',
-    message: 'Couleur secondaire (2)',
+    message: 'Couleur 1',
     validate: (input) => required(input)
   },
   {
     type: 'input',
     name: 'ligthColor',
-    message: 'Couleur opacité resuite (4)',
+    message: 'Couleur 2',
     default: '#ffffff',
     validate: (input) => required(input)
   }
