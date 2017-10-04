@@ -74,7 +74,7 @@ le `{numero}` et le `{dossier}` s'afficheron dans la console
 1. Si c'est un module de type carte, ajouter le fichier svg dans : `./dist/{numero}/{dossier}/assets/`
 2. Pour tester le module taper : `browser-sync start -s "./dist/{numero}/{dossier}/"`
 3. Placer le module sur le ftp dans : `ptit-libe/modules/{numero}/{dossier}/`
-4. Copier la balise iframe dans le corps de l'article : `<iframe src="http://www.liberation.fr/apps/ptit-libe/modules/{numero}/{dossier}" class="fit-content" width="100%"></iframe>`
+4. Copier la balise iframe dans le corps de l'article : `<iframe src="https:/statics.liberation.fr/apps/ptit-libe/modules/{numero}/{dossier}" class="fit-content" width="100%"></iframe>`
 
 ## ToDo
 
