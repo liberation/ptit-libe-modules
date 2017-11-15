@@ -15,7 +15,7 @@ Installer browser-sync via : `npm install -g browser-sync`
 
 #### Install :
 
-```bash
+```
 $ npm install
 ```
 ## Nouvau module
@@ -54,12 +54,12 @@ Ouvrir le repertoire ptit-libe-modules-master dans la console
 
 #### Lancer la création d'un nouveaux module :
 
-```bash
+```
 $ npm run build
 ```
 #### Répondre aux differentes questions :
 
-```bash
+```
 ? Nom du module
 ? Numéro du Ptit Libé
 ? Quel type de module? (Quiz, Diaporama, Carte cliquable, Switch bouton)
