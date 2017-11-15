@@ -14,6 +14,10 @@
 .ligthColor {background-color: @ligthColor;}
 
 /*! App */
-#app {position: relative; width: 100%; padding: 2em 30px; background: @ligthColor;}
+#app {position: relative; width: 80%; max-width: 1000px; margin: 0 auto; padding: 20px; background: @ligthColor;}
+
+@media only screen and (max-width: 800px) {
+  #app {width: 100%; padding: 20px;}
+}
 
 @import "@{module}.less";

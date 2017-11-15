@@ -11,9 +11,7 @@ function init() {
     },
     created () {
       this.$http.get('assets/switch.json').then(function(res) {
-        console.log(res.body)
         this.switchs = res.body
-        console.log(this.switchs)
       }, function() {
         console.log('error');
       });

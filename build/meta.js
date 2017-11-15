@@ -26,7 +26,7 @@ module.exports = [
       {
         name: 'Quiz',
         value: 'quiz',
-        short: 'QUiz'
+        short: 'Quiz'
       },
       {
         name: 'Diaporama',
@@ -83,20 +83,32 @@ module.exports = [
   },
   {
     type: 'input',
+    name: 'title',
+    message: 'Titre',
+    default: false
+  },
+  {
+    type: 'input',
+    name: 'subTitle',
+    message: 'Consigne',
+    default: false
+  },
+  {
+    type: 'input',
     name: 'mainColor',
-    message: 'Couleur principale (1)',
+    message: 'Couleur 4',
     validate: (input) => required(input)
   },
   {
     type: 'input',
     name: 'sideColor',
-    message: 'Couleur secondaire (2)',
+    message: 'Couleur 1',
     validate: (input) => required(input)
   },
   {
     type: 'input',
     name: 'ligthColor',
-    message: 'Couleur opacité resuite (4)',
+    message: 'Couleur 2',
     default: '#ffffff',
     validate: (input) => required(input)
   }
