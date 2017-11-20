@@ -89,6 +89,7 @@ le `{numero}` et le `{dossier}` s'afficheron dans la console
 ## ToDo
 
 - Tester les ID avec accents dans AI
+- ajouter les couleurs via api
 - Upload des fichier via ssh
 - Crée une interface pour remplacer l'utilisation de la console
 
