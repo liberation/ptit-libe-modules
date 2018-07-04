@@ -9,7 +9,7 @@ document.querySelector('#carte_cliquable').addEventListener('load', function() {
   [].slice.call(svg.querySelectorAll('*[id]')).forEach(function(element) {
       if (['path', 'polygon', 'g'].indexOf(element.tagName) >= 0) {
           var name = element.getAttribute('id').replace(/_\d+_/g, '').replace(/_/g, ' ');
-
+          element.style.cursor = 'pointer';
           element.addEventListener('click', function() {
               [].slice.call(svg.querySelectorAll('*[id]')).forEach(function(el) {
                 if (['path', 'polygon'].indexOf(element.tagName) >= 0) { el.style['fill'] = colors.off; }

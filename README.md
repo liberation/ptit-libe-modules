@@ -15,22 +15,29 @@ Installer browser-sync via : `npm install -g browser-sync`
 
 #### Install :
 
-```bash
+```
 $ npm install
 ```
-#### Vous aurez besoin de remplir un google sheet :
+## Nouvau module
+#### Vous aurez besoin de remplir un des google sheet :
 
-- [Spreadsheets Sample Quiz](https://docs.google.com/spreadsheets/d/19kqdeE6oRR5GQEAHaQ2zvhQghzq55aNYqcHM-ZK4Zyk/edit?usp=sharing)
-- [Spreadsheets Sample Diparorama](https://docs.google.com/spreadsheets/d/1AcNEA3-i9-_0DrukFVvOilf9yd2Y0rNS_hPBr-nQ9wQ/edit?usp=sharing)
-- [Spreadsheets Sample Switch](https://docs.google.com/spreadsheets/d/1KZ_IEqJwxv-W9T0X27ychB83bBDBU0Eqjd38wObjMn0/edit?usp=sharing)
+- [Spreadsheets Quiz](https://docs.google.com/spreadsheets/d/1nSlncTAbI2lMz9jGkI1i4_JCu1FIooMM5SIcPGD0718/edit)
+- [Spreadsheets Diparorama](https://docs.google.com/spreadsheets/d/14fZ31oTZM2AcMzjyXTN5PufubE4LaZjkW7aKI4dCgAM/edit)
+- [Spreadsheets Switch](https://docs.google.com/spreadsheets/d/1VZitfD0IGveJvwQayfflLTMwm3uQKMeVw8oS90Sz-uk/edit)
 
 _Une fois le google sheet remplis, il faut le publié : **Fichier / Publié pour le Web**_
 
-Et de copier son **ID** :
+#### De copier son ID :
 
 docs.google.com/spreadsheets/d/**1VZitfD0IGveJvwQayfflLTMwm3uQKMeVw8oS90Sz-uk**/edit#gid=0
 
-#### Ansi que les 3 couleurs du numéro en cours :
+- Pour les Quiz : **1nSlncTAbI2lMz9jGkI1i4_JCu1FIooMM5SIcPGD0718**
+- Pour les Diaporama : **14fZ31oTZM2AcMzjyXTN5PufubE4LaZjkW7aKI4dCgAM**
+- Pour les Switch : **1VZitfD0IGveJvwQayfflLTMwm3uQKMeVw8oS90Sz-uk**
+
+#### Ansi que des 3 couleurs du numéro en cours :
+
+[Le lien des settings dans le quai pour les couleurs](http://quai.liberation.fr/bilbo/ptitlibemodels/ptitlibesettings/)
 
 - Color 4
 - Color 1
@@ -39,7 +46,7 @@ docs.google.com/spreadsheets/d/**1VZitfD0IGveJvwQayfflLTMwm3uQKMeVw8oS90Sz-uk**/
 
 ## Utilisation
 
-Aller dans le repertoire ptit-libe-modules-master
+Ouvrir le repertoire ptit-libe-modules-master dans la console
 
 **Sur PC :** `[MAJ + Clique droit]` / Ouvrir une fenêtre de commandes ici
 
@@ -47,19 +54,21 @@ Aller dans le repertoire ptit-libe-modules-master
 
 #### Lancer la création d'un nouveaux module :
 
-```bash
+```
 $ npm run build
 ```
 #### Répondre aux differentes questions :
 
-```bash
+```
 ? Nom du module
 ? Numéro du Ptit Libé
 ? Quel type de module? (Quiz, Diaporama, Carte cliquable, Switch bouton)
 ? ID du sheet
-? Est ce qu\'il y a plusieur feuilles dans le sheet ? (Yes/No)
+? Est ce qu'il y a plusieur feuilles dans le sheet ? (Yes/No)
 ? Nom de la feuille à traiter
 ? Nom du fichier svg (pour les modules de type carte)
+? Titre
+? Consigne
 ? Couleur 4
 ? Couleur 1
 ? Couleur 2
@@ -72,15 +81,16 @@ Le nouveau module à été crée dans le dossier `./dist/{numero}/{dossier}/`
 le `{numero}` et le `{dossier}` s'afficheron dans la console
 
 1. Si c'est un module de type carte, ajouter le fichier svg dans : `./dist/{numero}/{dossier}/assets/`
-2. Pour tester le module taper : `browser-sync start -s "./dist/{numero}/{dossier}/"`
+2. Pour tester le module taper : `browser-sync start -s "./dist/{numero}/{dossier}/"` (pour sortir du test taper `[Ctrl + C]` sur le clavier)
 3. Placer le module sur le ftp dans : `ptit-libe/modules/{numero}/{dossier}/`
-4. Copier la balise iframe dans le corps de l'article : `<iframe src="https://statics.liberation.fr/apps/ptit-libe/modules/{numero}/{dossier}" class="fit-content" width="100%"></iframe>`
+4. Copier la balise iframe dans le corps de l'article : `<iframe src="https://statics.liberation.fr/apps/ptit-libe/modules/{numero}/{dossier}" class="fit-content" width="100%"></iframe>` dans une balise p avec la calss "full-width"
 
 ## ToDo
 
 - Tester les ID avec accents dans AI
+- ajouter les couleurs via api
 - Upload des fichier via ssh
-
+- Crée une interface pour remplacer l'utilisation de la console
 
 
 ## License

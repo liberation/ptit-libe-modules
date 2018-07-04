@@ -22,6 +22,12 @@
     </head>
     <body>
         <div id="app">
+            {{#if title}}
+            <p class="module-title libesansrond">{{title}}</p>
+            {{/if}}
+            {{#if subTitle}}
+            <p class="module-sub-title">{{subTitle}}</p>
+            {{/if}}
             <div id="carte" class="as-p text-center">
                 <object id="carte_cliquable" data="assets/{{ imageSvg }}" type="image/svg+xml"></object>
                 <div id="mapName" class="svgwithlabels__label libesansrond ng-binding"></div>

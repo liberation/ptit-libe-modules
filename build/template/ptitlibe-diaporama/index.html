@@ -24,6 +24,12 @@
     </head>
     <body>
       <div id="app">
+        {{#if title}}
+        <p class="module-title libesansrond">{{title}}</p>
+        {{/if}}
+        {{#if subTitle}}
+        <p class="module-sub-title">{{subTitle}}</p>
+        {{/if}}
         <div class="diaporama">
           <div class="slider">
             <div v-for="(slide, i) in slides">

@@ -8,7 +8,7 @@ const fs = require('fs'),
       handlebars = require('handlebars'),
       inquirer = require('inquirer'),
       less = require('less'),
-      _ = require('lodash');
+      _ = require('lodash')
 
 var questions = require('./meta'),
     data, src, dest
@@ -18,7 +18,7 @@ var slugify = function (str) {
   return slug
 }
 
-console.log('\n* Start Process *\n');
+console.log('\n* Start Process *\n')
 
 inquirer.prompt(questions).then(function (answers) {
   answers.slug = slugify(answers.name)
@@ -43,19 +43,19 @@ function buildFiles () {
   
   // ASSETS
   copy(src + 'assets/**', dist + 'assets/', function(err, files) {
-    if (err) throw err;
+    if (err) throw err
     // console.log('   => build html')
     // console.log('   => build js')
     buildCss(function() {
       if (data.module !== 'carte') buildJson()
       else printResult()
     })
-  });
+  })
 }
 
 function buildCss (next) {
   // CSS
-  var mainLess = fs.readFileSync('./build/less/main.less').toString();
+  var mainLess = fs.readFileSync('./build/less/main.less').toString()
   less.render(mainLess, {
     paths: ['./build/less'],
     filename: 'main.less',
@@ -67,10 +67,10 @@ function buildCss (next) {
     }
   })
   .then(function(output) {
-    fs.writeFileSync(dist + 'assets/styles.css', output.css);
+    fs.writeFileSync(dist + 'assets/styles.css', output.css)
     // console.log('   => build css')
     next()
-  });
+  })
 
 }
 
@@ -107,15 +107,15 @@ function buildJson () {
     }
 
     fs.writeFile(dist + 'assets/' + data.module+'.json', JSON.stringify(result), function (err) {
-      if (err) console.log(err);
-      // console.log('   => build json');
+      if (err) console.log(err)
+      // console.log('   => build json')
       printResult()
-    });
+    })
   })
   .catch(function(err) {
-      console.log(err.message);
-      console.log(err.stack);
-  });
+      console.log(err.message)
+      console.log(err.stack)
+  })
 
 }
 
@@ -165,5 +165,5 @@ function printResult () {
   console.log('=> Et l\'iframe pour l\'article :')
   console.log('   <iframe src="http://www.liberation.fr/apps/ptit-libe/modules/' + data.path + '" class="fit-content" width="100%"></iframe> \n')
 
-  console.log('\n* End Process *\n');
+  console.log('\n* End Process *\n')
 }

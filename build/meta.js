@@ -26,7 +26,7 @@ module.exports = [
       {
         name: 'Quiz',
         value: 'quiz',
-        short: 'QUiz'
+        short: 'Quiz'
       },
       {
         name: 'Diaporama',
@@ -80,6 +80,18 @@ module.exports = [
     when (answers) {
       return answers.module === 'carte' 
     }
+  },
+  {
+    type: 'input',
+    name: 'title',
+    message: 'Titre',
+    default: false
+  },
+  {
+    type: 'input',
+    name: 'subTitle',
+    message: 'Consigne',
+    default: false
   },
   {
     type: 'input',
